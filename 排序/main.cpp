@@ -1,15 +1,21 @@
-//
-//  main.cpp
-//  排序
-//
-//  Created by S20181105302 on 2019/8/27.
-//  Copyright © 2019 S20181105302. All rights reserved.
-//
-
 #include <iostream>
+#include <algorithm>
+#define MAX 10
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main()
+{
+    int *p = new int[10];
+    
+    for( int i=0; i<MAX; i++ )
+    {
+        //p[i] = i+1;
+        cin >> p[i];
+    }
+    sort(p,p+10);
+    for( int i=0; i<MAX; i++ )
+    {
+        cout << p[i] << endl;
+    }
     return 0;
 }
